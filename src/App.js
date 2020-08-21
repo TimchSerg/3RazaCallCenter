@@ -2,6 +2,12 @@ import React from 'react';
 import {HashRouter as Switch, Route} from 'react-router-dom';
 
 import './styles/App.css';
+import './styles/index.css';
+import './styles/main.css';
+import 'primereact/resources/themes/saga-green/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+import 'primeflex/primeflex.min.css';
 
 import MainView from './views/Main.view';
 import LoginView from "./views/Login.view";

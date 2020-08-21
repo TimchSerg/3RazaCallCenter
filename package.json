@@ -140,7 +140,9 @@
     ]
   },
   "devDependencies": {
+    "@hookform/error-message": "0.0.4",
     "classnames": "^2.2.6",
+    "primeflex": "^2.0.0-rc.1",
     "react-hook-form": "^6.4.1",
     "react-transition-group": "^4.4.1"
   }
