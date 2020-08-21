@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {HashRouter as Switch, Route} from 'react-router-dom';
 
+import './styles/App.css';
+
+import MainView from './views/Main.view';
+import LoginView from "./views/Login.view";
+import RegistrationView from "./views/Registration.view";
+
+/**
+ *
+ * @returns {*} return HTML code
+ * @class
+ */
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Switch>
+                <Route exact path='/' component={LoginView} />
+                <Route path="/login" component={LoginView} />
+                <Route path="/registration" component={RegistrationView} />
+                <Route path="/main" component={MainView} />
+            </Switch>
+        </div>
+    );
 }
 
 export default App;
+
